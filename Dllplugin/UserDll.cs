@@ -7,7 +7,7 @@ namespace Dllplugin
 {
     class UserDll
     {
-        public static string Attack(string url)
+        public static string DllExec(string url)
         { //方法名称
 
             string expResult = string.Empty;
