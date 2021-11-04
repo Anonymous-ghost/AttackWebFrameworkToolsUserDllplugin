@@ -7,6 +7,13 @@ namespace Dllplugin
 {
     class UserDll
     {
+
+        /// <summary>
+        /// 只要返回不是 down error 程序将自动将结果写入文本中。如果想要自己实现 写文件那么需要返回结果加入|5a75574b96ce583b250cdcfff48caa78
+        /// 
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
         public static string DllExec(string url)
         { //方法名称
 
@@ -29,7 +36,9 @@ namespace Dllplugin
             }else
             {
 
-                expResult = thinkphpRceRes;
+                expResult = thinkphpRceRes; //系统系统写结果
+
+                expResult = thinkphpRceRes+ "|5a75574b96ce583b250cdcfff48caa78|"; //用户自己写成功结果系统不管
             }
 
 
