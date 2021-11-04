@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\批量框架用户自定义版\DLlplugin\DLlplugin\bin\Release\Dllplugin.dll.config
+C:\Users\Administrator\Desktop\批量框架用户自定义版\DLlplugin\DLlplugin\bin\Release\Dllplugin.dll
+C:\Users\Administrator\Desktop\批量框架用户自定义版\DLlplugin\DLlplugin\bin\Release\Dllplugin.pdb
+C:\Users\Administrator\Desktop\批量框架用户自定义版\DLlplugin\DLlplugin\obj\Release\Dllplugin.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\批量框架用户自定义版\DLlplugin\DLlplugin\obj\Release\Dllplugin.dll
+C:\Users\Administrator\Desktop\批量框架用户自定义版\DLlplugin\DLlplugin\obj\Release\Dllplugin.pdb
