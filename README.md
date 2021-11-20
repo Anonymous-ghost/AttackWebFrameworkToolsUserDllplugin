@@ -5,7 +5,7 @@ AttackWebFrameworkTools用户自定义插件模板项目,自定义项目.用户�
   <li>使用介绍</li>
 </ul>
 <h2> Exp自动生成器上图实测自动生成dll</h2>
-自动生成dll,并且加载利用
+自动生成dll,并且加载利用。注意生成dll为:AnyCPU
 
 ![exp生成器](https://raw.githubusercontent.com/Anonymous-ghost/AttackWebFrameworkToolsUserDllplugin/main/UserDll.png)<br/>
 
