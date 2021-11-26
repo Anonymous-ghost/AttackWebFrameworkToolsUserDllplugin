@@ -1,5 +1,5 @@
 # AttackWebFrameworkToolsUserDllplugin
-AttackWebFrameworkTools用户自定义插件模板项目,自定义项目.用户自己编写dll.注意生成dll为:AnyCPU
+AttackWebFrameworkTools用户自定义插件模板项目,自定义项目.用户自己编写dll.注意生成dll为:AnyCPU 64为优先 生成库为 4.5.1
 <h1>UserDllpluginExpGenerate Exp自动生成器</h1>
 <ul>
   <li>使用介绍</li>
