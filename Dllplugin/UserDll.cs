@@ -18,29 +18,27 @@ namespace Dllplugin
         { //方法名称
 
             string expResult = string.Empty;
-            string downcase = "down";
             string errorcase = "error";
+
 
             string thinkphpRceRes = thinkphpRce(url);
 
 
 
-            if (downcase.Equals(thinkphpRceRes))
-            {
-
-                return downcase;
-            }else if (errorcase.Equals(thinkphpRceRes))
+            if (errorcase.Equals(thinkphpRceRes))
             {
 
                 expResult = errorcase;
-            }else
+
+            }
+            else
             {
 
                 expResult = thinkphpRceRes; //系统系统写结果
 
-                expResult = thinkphpRceRes+ "|5a75574b96ce583b250cdcfff48caa78|"; //用户自己写成功结果系统不管
-            }
+                expResult = thinkphpRceRes + "|5a75574b96ce583b250cdcfff48caa78|"; //用户自己写成功结果系统不管 标志5a75574b96ce583b250cdcfff48caa78
 
+            }
 
             return expResult;
         }
@@ -71,31 +69,27 @@ namespace Dllplugin
         private  static string thinkphpRce(string url)
         {
             string result = string.Empty;
-            string downcase = "down";
-            string errorcase = "error";
 
             ///调用httpSendMethod 实战漏洞逻辑
             ///
+            string errorcase = "error";
 
-            string res = httpSendMethod(url);
+            string res = httpSendMethod(url); //调用http请求请求结果
 
 
-            if (downcase.Equals(res))  //网站无法访问获取其他错误可以返回down
+            if (res.Contains("有漏洞标志")) //
             {
+                //通过正则表达式方式直接刷选出漏洞然后赋值结果
 
-                return downcase;
+                string res1 = res.Split('|')[0]; //编程思维逻辑思维方式思考结果
+                result = res1;  //最终结果
 
-            }else if (errorcase.Equals(res)){  //没有漏洞返回error
-
-
-                result = errorcase;
             }else
             {
 
 
-                result = res;  //成果则返回成功结果
+                result = errorcase;
             }
-
 
 
 
